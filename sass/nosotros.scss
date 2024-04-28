@@ -1,0 +1,51 @@
+.bodyC {
+    background-color: black;
+    background-image: none;
+  }
+  
+  
+
+  .h1C {
+    font-size: xx-large;
+    background-color: black;
+    background-image: none;
+    color: white;
+  }
+  
+  .ulC {
+    background-color: black;
+    color: white;
+  }
+  
+  .ulC li a {
+    color: white;
+    &:hover
+{color:blueviolet;}
+  }
+  
+  .fooC {
+    background-color: black;
+    background-image: none;
+  }
+  
+  .redesC {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    color: white;
+    margin: 30px;
+    font-size: larger;
+    justify-content: space-around;
+  }
+  
+  .pC {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .h2C {
+    color: white;
+    margin: 50px;
+    font-size: xx-large;
+    text-decoration: underline;
+  }

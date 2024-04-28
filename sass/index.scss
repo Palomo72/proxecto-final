@@ -1,0 +1,218 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$background-color: green;
+
+body {
+  background-image: url(../assets/architecture-design.jpg);
+  background-color: $background-color;
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-image: url(../assets/architecture-design.jpg);
+  background-position: center center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  justify-content: space-around;
+  width: 100%;
+  height: 180px;
+  background-color: $background-color;
+}
+
+h1 {
+  background-image: url(../assets/Group.png);
+  background-repeat: no-repeat;
+  background-position: -2% 50%;
+  text-align: center;
+  /*posicion del titulo*/
+  text-decoration-line: underline;
+  /* subrrayado*/
+  text-shadow: -2px -5px 5px rgb(5, 98, 55);
+  /* sombras*/
+  font-size: 25px;
+  /*tamaño de letra*/
+  font-weight: 200px;
+  /*grosor de letra*/
+  font-style: normal;
+  /*estilo de letras*/
+  background-color: $background-color;
+  /*fondo de color*/
+  margin: 120px;
+  /*separalo bordes del costado*/
+  padding: 40px;
+  /*agranda el background color*/
+  border-style: double;
+  /*remarca el borde */
+}
+
+p.guanC {
+  font-size: large;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+
+.guanC a {
+  color: whitesmoke;
+  margin: 20px;
+  text-shadow: none;
+}
+
+ul {
+  display: flex;
+  margin: 40px;
+  flex-direction: row;
+  background-color: $background-color;
+  border-style: double;
+  font-size: larger;
+  color: black;
+  align-items: center;
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin-right: 50px;
+  justify-content: space-around;
+}
+
+.nav li a {
+  color: whitesmoke;
+  &:hover
+{color:blueviolet;}
+}
+
+main {
+  background-image: url(../assets/plomero.webp);
+  background-position: left;
+  background-size: 50% 80%;
+  background-repeat: no-repeat;
+  background-color: rgba(115, 176, 238, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.seccionCero {
+  background-image: url(../assets/hogar.png);
+  background-position: 95%;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-evenly;
+  margin: 20px;
+  font-size: x-large;
+  text-align: right;
+  text-decoration: underline;
+  text-shadow: -2px -5px 5px gray;
+  border-color: black;
+  border-style: double;
+}
+
+.seccionUno {
+  display: flex;
+  flex-direction: row row-reverse;
+  justify-content: center;
+}
+
+.loren p {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  text-align: start;
+  font-size: xx-large;
+  color: black;
+  margin: 20%;
+  text-shadow: 3px gray;
+  background-color: rgba(245, 245, 245, 0.375);
+  border-style: double;
+}
+
+.seccionDos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-style: double;
+  font-size: x-large;
+  margin: 100px;
+  gap: 50px;
+  background-color: rgba(245, 245, 245, 0.364);
+}
+
+.gasI {
+  background-image: url(../assets/fuego.png);
+  background-position: 62%;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  color: black;
+  text-shadow: -2px -5px 5px rgba(0, 0, 0, 0.74);
+}
+
+.ploI {
+  background-image: url(../assets/grifo.png);
+  background-position: 62%;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-shadow: -2px -5px 5px rgba(0, 0, 0, 0.685);
+}
+
+.elecI {
+  background-image: url(../assets/enchufe.png);
+  background-position: 62%;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  text-decoration: underline;
+  text-shadow: -2px -5px 5px rgba(0, 0, 0, 0.679);
+}
+
+footer {
+  background-color:$background-color;
+  width: 100%;
+  height: 110px;
+}
+
+.pFooter {
+    background-color: $background-color;
+  font-size: xx-large;
+  text-align: center;
+  margin: 25px;
+  color: white;
+  text-decoration: underline;
+  text-shadow: 2px 5px 8px black;
+}
+
+.whatsappF a {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: x-large;
+  background-image: url(../assets/whatsa.png);
+  background-repeat: no-repeat;
+  background-position: 42%;
+  color: blue;
+}
+
+.whatsappF {
+  position: fixed;
+  background-size: 10px;
+  bottom: 50px;
+  right: 10px;
+}

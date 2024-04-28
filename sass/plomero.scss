@@ -1,0 +1,139 @@
+.plomeroBody {
+    background-color: black;
+    background-image: none;
+  }
+  
+  .plomeroHeader {
+    background-color: green;
+    background-image: none;
+    width: 100%;
+    height: 40px;
+    border-style: double;
+  }
+  
+  .barraP.li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    background-color: green;
+  }
+  
+  .ulPlomero {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 20px;
+    flex-direction: row;
+    background-color: green;
+    font-size: larger;
+    border-style: none;
+  }
+  
+  .ulPlomero li a {
+    color: white;
+    &:hover
+{color:blueviolet;}
+  }
+  
+  .tituloP {
+    color: black;
+    background-color: rgba(0, 128, 0, 0.979);
+    font-size: 30px;
+    font-weight: 20px;
+    margin: 50px;
+    border-style: double;
+    text-shadow: -2px -5px 5px cornsilk;
+    background-image: none;
+  }
+  
+  /*****main*******************************/
+  /*para centra imagenes en el contenedor
+  .seccio-1 img{
+      width:100%;
+      heiht:100%;*/
+  .ploMain {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* declara hasta 12 columnas*/
+    /*para fraccionar la pantalla en partes iguales uasar fr ejemplo 1fr 2fr 0.5fr*/
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    background-image: none;
+    /* declara filas*/
+    width: 100%;
+    /*ancha de pantalla*/
+    height: 100vh;
+    column-gap: 10px;
+    row-gap: 10px;
+    /*justify-content: para mover y centrar.
+    alaing-content: center; para centrar.*/
+    /*justify-item: center,se aplican al contenedors */
+    /*alain-item: center,  se aplican al contenedors*/
+    /* la medida vr sirve para ocupar el 100% del alto de la pantalla*/
+    grid-template-areas: "divPlo-1 divPlo-3" "divPlo-2 divPlo-3" "divPlo-5 divPlo-4";
+    /*las comillas representan las filas declaradas y dentro de las comillas se declaran las columnass*/
+    /* si ponemos un punto al lado de seccion deja un espacio*/
+    /*row-gap  columns-gap  para generar espacios entre elementos en pixeles*/
+  }
+  
+  .h3P {
+    text-align: center;
+    font-size: xx-large;
+    text-decoration: underline;
+    background-color: rgba(128, 128, 128, 0.747);
+  }
+  
+  .divPlo-1 {
+    grid-area: divPlo-1;
+    background-image: url(../assets/plomero.jpg);
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+  
+  .divPlo-2 {
+    grid-area: divPlo-2;
+    background-image: url(../assets/baño.jpg);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  
+  .divPlo-3 {
+    grid-area: divPlo-3;
+    background-image: url(../assets/th.jpeg);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+  
+  .divPlo-4 {
+    grid-area: divPlo-4;
+    background-color: beige;
+  }
+  
+  .divPlo-5 {
+    grid-area: divPlo-5;
+    background-color: aqua;
+    background-image: url(../assets/plomeros.jpg);
+    background-position: 100% 100%;
+    background-size: 100% 100%;
+  }
+  
+  .plomero-footer {
+    background-color: grey;
+    height: 70px;
+  }
+  
+  .pF {
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+  }
+  
+  .whatP {
+    position: fixed;
+    background-size: 10px;
+    bottom: 20px;
+    right: 40px;
+  }

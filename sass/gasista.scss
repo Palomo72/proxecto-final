@@ -1,0 +1,195 @@
+.bodyGas {
+    width: 100%;
+    height: 1100px;
+  }
+  $background-color:green;
+  
+  .headerGas {
+    background-image: url(../assets/hornalla.jpg);
+    background-position: center center;
+    background-size: 50% 100%;
+    background-repeat: repeat;
+    width: 100%;
+    height: 148px;
+  }
+  
+  .gasUl {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    margin: 20px;
+    flex-direction: row;
+    background-color:$background-color;
+    font-size: larger;
+    border-style: double;
+  }
+  
+  .barraGas.li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .barraGas li a {
+    color: whitesmoke;
+    &:hover
+{color:blueviolet;}
+  }
+  
+  .titulo {
+    color: rgb(255, 217, 0);
+    font-size: 20px;
+    font-weight: 100px;
+    border-style: none;
+    text-shadow: -2px -5px 5px rgba(0, 0, 0, 0.837);
+    margin: 60px;
+    background-image: none;
+    border-style: ridge;
+  }
+  
+  /*******************************main*********************/
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* declara hasta 12 columnas*/
+    /*para fraccionar la pantalla en partes iguales uasar fr ejemplo 1fr 2fr 0.5fr*/
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: black;
+    background-image: none;
+    /* declara filas*/
+    width: 100%;
+    /*ancha de pantalla*/
+    height: 100vr;
+    column-gap: 10px;
+    row-gap: 10px;
+    /*justify-content: para mover y centrar.
+    alaing-content: center; para centrar.*/
+    /*justify-item: center,se aplican al contenedors */
+    /*alain-item: center,  se aplican al contenedors*/
+    /* la medida vr sirve para ocupar el 100% del alto de la pantalla*/
+    grid-template-areas: "seccion-1 seccion-5" "seccion-2 seccion-5" "seccion-3 seccion-5" "seccion-4 seccion-4";
+  }
+  
+  .seccion-1 {
+    background-color: $background-color;
+    grid-area: seccion-1;
+    background-image: url(../assets/anafe.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    /*justify-self:center;*/
+    /*alaing-self:center;*/
+  }
+  
+  .h3G1 {
+    background-color: rgba(245, 245, 245, 0.804);
+    text-align: center;
+    font-size: large;
+    border-style: groove;
+  }
+  
+  .seccion-2 {
+    grid-area: seccion-2;
+    background-image: url(../assets/medidorGas.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .psec2 {
+    font-size: large;
+    text-align: center;
+    background-color: whitesmoke;
+    border-style: groove;
+  }
+  
+  .seccion-3 {
+    background-image: url(../assets/variosG.jpeg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    grid-area: seccion-3;
+  }
+  
+  .psec3 {
+    font-size: large;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.704);
+    border-style: groove;
+  }
+  
+  .seccion-4 {
+    background-color: rgba(128, 128, 128, 0.879);
+    grid-area: seccion-4;
+    border-style: double;
+  }
+  
+  .psec4 {
+    margin: 30px;
+  }
+  
+  .h3G {
+    text-align: center;
+    text-decoration: underline;
+  }
+  
+  .seccion-5 {
+    background-image: url(../assets/leño.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color: black;
+    grid-area: seccion-5;
+  }
+  
+  .h2G {
+    font-size: xx-large;
+    text-align: center;
+    /*posision del titulo*/
+    color: black;
+    background-color: rgba(128, 128, 128, 0.89);
+    text-shadow: -2px -5px 5px rgba(0, 0, 0, 0.273);
+    border-style: double;
+  }
+  
+  .secCinco {
+    font-size: large;
+    margin: 40px;
+    background-color: rgba(245, 245, 220, 0.579);
+    border-style: double;
+  }
+  
+  .footerG {
+    background-color: blue;
+    height: 55px;
+  }
+  
+  .whatsappG {
+    display: flex;
+    text-align: center;
+    color: azure;
+    justify-content: center;
+    font-size: x-large;
+  }
+  
+  .whatsappG a {
+    color: blanchedalmond;
+  }
+  
+  .whatsappGas {
+    position: fixed;
+    background-size: 10px;
+    bottom: 20px;
+    right: 40px;
+  }
+  
+  .aG {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: blanchedalmond;
+    font-size: large;
+    background-image: url(../assets/whatsapp.png);
+    background-repeat: no-repeat;
+    background-position: 44%;
+  }
+  
